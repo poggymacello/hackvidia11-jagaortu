@@ -1,0 +1,42 @@
+"""User journey: tanpa vs dengan JagaOrtu -> build/journey.png"""
+from common import BUILD, render, write
+
+HTML = """<!doctype html><html><head><meta charset='utf-8'><style>
+*{box-sizing:border-box} body{margin:0;font-family:'Segoe UI',Arial,sans-serif;background:#fff;color:#1b1b1b}
+#j{width:1500px;padding:18px 22px}
+.lane{display:flex;align-items:stretch;gap:0;margin:10px 0}
+.lab{width:170px;flex:none;border-radius:14px;display:flex;align-items:center;justify-content:center;text-align:center;
+     font-weight:800;font-size:21px;padding:8px;color:#fff}
+.bad .lab{background:#9e2a2b}.good .lab{background:#23395d}
+.st{flex:1;display:flex;align-items:center}
+.box{flex:1;border:2.5px solid #555;border-radius:14px;padding:10px 12px;font-size:17.5px;line-height:1.3;background:#fff;min-height:104px}
+.bad .box{border-color:#9e2a2b;background:#fff7f7}.good .box{border-color:#23395d;background:#f4f7fc}
+.box b{display:block;font-size:18.5px;margin-bottom:3px}
+.arr{width:34px;flex:none;text-align:center;font-size:30px;font-weight:800;color:#444}
+.end.bad2{background:#9e2a2b;color:#fff;border-color:#9e2a2b}.end.good2{background:#2e7d32;color:#fff;border-color:#2e7d32}
+.nt{font-size:14px;color:#555;margin-top:6px;text-align:right}
+</style></head><body><div id='j'>
+<div class='lane bad'><div class='lab'>Tanpa<br>JagaOrtu</div><div class='arr'></div>
+ <div class='box'><b>Pesan masuk</b>"Ma, ini Andi. HP rusak, transfer 5 juta. Jangan bilang Papa."</div><div class='arr'>&#8594;</div>
+ <div class='box'><b>Panik &amp; sendirian</b>Takut terjadi sesuatu pada anak; sungkan bertanya</div><div class='arr'>&#8594;</div>
+ <div class='box'><b>Transfer</b>Keputusan diambil dalam hitungan menit</div><div class='arr'>&#8594;</div>
+ <div class='box end bad2'><b>Kerugian</b>Rata-rata &plusmn;Rp21 juta per aduan*; keluarga baru tahu belakangan</div>
+</div>
+<div class='lane good'><div class='lab'>Dengan<br>JagaOrtu</div><div class='arr'></div>
+ <div class='box'><b>Pesan yang sama</b>Dinilai di perangkat: nomor baru, minta transfer, minta rahasia</div><div class='arr'>&#8594;</div>
+ <div class='box'><b>Jeda + suara</b>"Tunggu dulu, Bu" dibacakan dalam bahasa Sunda, dengan 3 tanda bahaya</div><div class='arr'>&#8594;</div>
+ <div class='box'><b>Aturan Dua Orang</b>1 ketuk "Tanya Rina dulu"; Rina menerima ringkasan risiko</div><div class='arr'>&#8594;</div>
+ <div class='box end good2'><b>Aman</b>Rina menelepon; Andi dihubungi di nomor lama; modus dilaporkan</div>
+</div>
+<div class='nt'>*Rp9,1 triliun dari 432.637 aduan IASC hingga 14 Januari 2026 (perhitungan tim)</div>
+</div></body></html>"""
+
+
+def main():
+    h = write(BUILD / "journey.html", HTML)
+    render([{"type": "png", "html": h, "out": BUILD / "journey.png", "selector": "#j", "width": 1560, "height": 600, "scale": 2}])
+    print("journey ok")
+
+
+if __name__ == "__main__":
+    main()

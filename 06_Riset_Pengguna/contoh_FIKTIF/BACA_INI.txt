@@ -1,0 +1,1 @@
+Data di folder ini FIKTIF, hanya untuk menguji olah_hasil.py. JANGAN dipakai di proposal. Skrip menolak --tulis dari folder ini.

@@ -1,0 +1,1 @@
+id-ID-GadisNeural+10%Semua komponen memakai API Android resmi dan model yang sudah tersedia, sehingga MVP-nya dapat dibangun dalam dua puluh empat jam.

@@ -1,0 +1,1 @@
+id-ID-GadisNeural+10%Aturan pasti menyaring nomor, rekening, dan file berbahaya. Model kecil di perangkat menilai risiko secara offline. Model bahasa besar hanya dipanggil untuk kasus yang ambigu, dengan data yang sudah disamarkan.

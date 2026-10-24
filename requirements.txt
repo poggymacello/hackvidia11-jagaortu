@@ -1,0 +1,10 @@
+# Paket Python untuk membangun ulang dokumen (bukan kode aplikasi JagaOrtu).
+# Pasang di venv proyek:  python -m venv .venv  lalu  .venv\Scripts\python -m pip install -r requirements.txt
+python-docx==1.2.0      # proposal & surat (.docx)
+pillow==13.0.0          # trim/ukur gambar wireframe
+docx2pdf==0.1.8         # DOCX -> PDF lewat Microsoft Word (Windows/macOS). Tanpa Word: pakai LibreOffice (soffice)
+pywin32==312 ; sys_platform == "win32"   # dibutuhkan docx2pdf di Windows
+pypdf==6.21.2           # cek jumlah halaman proposal (batas 10 halaman teks)
+playwright==1.64.1      # render HTML -> PNG/PDF (lean canvas, wireframe, slide video) memakai Edge/Chrome terpasang
+edge-tts==7.3.1         # narasi TTS video (butuh internet); tidak perlu bila memakai rekaman suara sendiri
+imageio-ffmpeg

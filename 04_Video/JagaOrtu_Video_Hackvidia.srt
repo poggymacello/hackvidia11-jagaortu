@@ -1,0 +1,99 @@
+1
+00:00:00,000 --> 00:00:10,039
+"Ma, ini Andi. HP-ku rusak, ini nomor baru. Tolong transfer 5 juta sekarang, ya. Jangan bilang Papa dulu."
+
+2
+00:00:10,139 --> 00:00:27,740
+Pesan seperti ini datang setiap hari ke ponsel orang tua di Indonesia. Kini suaranya pun bisa dipalsukan: 3 detik rekaman cukup untuk tiruan suara yang mirip (McAfee, 2023).
+
+3
+00:00:27,840 --> 00:00:41,670
+Kami Tim JagaOrtu. Pertanyaan kami: bagaimana melindungi orang tua dari penipuan digital, tanpa merampas kemandirian mereka?
+
+4
+00:00:41,770 --> 00:00:50,469
+IASC OJK menerima 702.342 laporan penipuan (Nov 2024 - Sep 2026).
+
+5
+00:00:50,570 --> 00:00:59,439
+Modus fake call (menyamar keluarga/petugas): kerugian terlapor terbesar, Rp2,09 triliun.
+
+6
+00:00:59,539 --> 00:01:14,120
+Literasi keuangan usia 51-79 tahun hanya 54,55%; lansia yang online naik dari 14,10% (2021) menjadi 34,13% (2025).
+
+7
+00:01:14,219 --> 00:01:21,480
+Jawa Barat: laporan penipuan terbanyak di Indonesia (131.445 laporan).
+
+8
+00:01:21,579 --> 00:01:35,150
+Penipu menang ketika korban panik, ditekan sosok "berwenang", dan diminta merahasiakan. Keputusan diambil sendirian.
+
+9
+00:01:35,250 --> 00:01:45,770
+Edukasi penting, tetapi tidak hadir di momen itu. Yang dibutuhkan: jeda, dan orang kedua yang dipercaya.
+
+10
+00:01:45,870 --> 00:01:57,230
+JagaOrtu: aturan dua orang berbasis AI. Prinsip bank untuk transaksi berisiko, kini untuk keluarga.
+
+11
+00:01:57,329 --> 00:02:07,640
+Dipasang oleh anak dalam 3 langkah: izin terbatas, pilih Pendamping, kata sandi keluarga.
+
+12
+00:02:07,739 --> 00:02:16,819
+Pesan berisiko masuk: JagaOrtu memberi jeda dan membacakan tanda-tandanya dalam bahasa Ibu.
+
+13
+00:02:16,919 --> 00:02:26,340
+(Sunda) "Antosan heula, Bu..." = "Tunggu dulu, Bu. Pesan ini minta transfer cepat dan minta dirahasiakan. Tanya Rina dulu, ya."
+
+14
+00:02:26,439 --> 00:02:41,810
+Satu ketukan memanggil Rina: ia menerima ringkasan risiko (bukan isi chat) dan menelepon Ibu. 10 menit tanpa respons, pendamping cadangan dihubungi.
+
+15
+00:02:41,909 --> 00:02:53,099
+"Tanya Dulu": Ibu cukup bercerita; JagaOrtu menjelaskan modus dan langkah aman dengan bahasa sederhana.
+
+16
+00:02:53,199 --> 00:03:05,069
+Telepon tidak direkam. JagaOrtu mengingatkan kata sandi keluarga: tetap ampuh walau suara dikloning AI.
+
+17
+00:03:05,169 --> 00:03:14,829
+Latihan Waspada: simulasi penipuan yang aman agar kewaspadaan terlatih sebelum penipu sungguhan datang.
+
+18
+00:03:14,929 --> 00:03:20,679
+Bagaimana AI-nya bekerja? AI secukupnya.
+
+19
+00:03:20,779 --> 00:03:37,179
+L0 aturan pasti  >  L1 model di perangkat (offline)  >  L2 LLM hanya untuk kasus ambigu, data disamarkan.
+
+20
+00:03:37,279 --> 00:03:48,569
+L3: keputusan di tangan manusia. Isi pesan tidak disimpan (UU No. 27/2022 PDP).
+
+21
+00:03:48,669 --> 00:03:57,679
+Memakai API Android resmi dan model yang tersedia: MVP dapat dibangun dalam 24 jam.
+
+22
+00:03:57,779 --> 00:04:14,159
+B2B2C: bank & BPR penyalur pensiun (POJK 12/2024). Biaya LLM ±Rp90/pengguna/bulan (asumsi).
+
+23
+00:04:14,259 --> 00:04:29,009
+Pilot 30 keluarga (desain daftar tunggu, kriteria ditetapkan sebelum data). 1 fake call tercegah = rata-rata Rp32,9 jt.
+
+24
+00:04:29,109 --> 00:04:39,199
+Tidak ada lansia yang harus menghadapi penipu sendirian.
+
+25
+00:04:39,299 --> 00:04:44,539
+JagaOrtu. Sebelum transfer, tanya dulu.

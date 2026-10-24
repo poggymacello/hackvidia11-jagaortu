@@ -1,0 +1,101 @@
+<!doctype html><html><head><meta charset='utf-8'><style>
+* { box-sizing: border-box; }
+body { margin: 0; font-family: 'Segoe UI', Arial, sans-serif; color: #1d1d1d; background: #fff; }
+.phone { width: 360px; height: 760px; border: 3px solid #2b2b2b; border-radius: 38px; padding: 14px 16px;
+         position: relative; background: #fff; overflow: hidden; }
+.notch { width: 110px; height: 18px; border-radius: 0 0 12px 12px; background: #2b2b2b; margin: -14px auto 6px; }
+.sb { display: flex; justify-content: space-between; font-size: 12px; color: #777; margin-bottom: 10px; }
+h1 { font-size: 23px; margin: 4px 0 10px; line-height: 1.2; }
+h2 { font-size: 19px; margin: 6px 0; }
+.sub { font-size: 15px; color: #555; margin: 0 0 10px; }
+.card { border: 2px solid #3a3a3a; border-radius: 14px; padding: 11px 12px; margin: 8px 0; background: #fff; }
+.card.soft { border-color: #9a9a9a; background: #f3f3f3; }
+.btn { display: block; width: 100%; border: 2.5px solid #222; border-radius: 14px; padding: 12px; font-size: 19px;
+       font-weight: 700; text-align: center; margin: 8px 0; background: #fff; }
+.btn.pri { background: #2b2b2b; color: #fff; }
+.btn.sm { font-size: 15px; padding: 8px; font-weight: 600; }
+.link { text-align: center; font-size: 14px; text-decoration: underline; color: #555; margin-top: 6px; }
+.row { display: flex; gap: 8px; align-items: center; }
+.av { width: 40px; height: 40px; border-radius: 50%; border: 2px solid #333; display: flex; align-items: center;
+      justify-content: center; font-weight: 700; background: #e6e6e6; flex: none; }
+.ph { background: repeating-linear-gradient(45deg,#eee,#eee 6px,#ddd 6px,#ddd 12px); border: 2px dashed #999; border-radius: 10px; }
+.tog { width: 44px; height: 24px; border-radius: 12px; border: 2px solid #333; position: relative; flex: none; background: #bbb; }
+.tog::after { content: ''; position: absolute; top: 2px; right: 2px; width: 16px; height: 16px; border-radius: 50%; background: #222; }
+.tog.off { background: #fff; } .tog.off::after { left: 2px; right: auto; background: #999; }
+.big { font-size: 20px; line-height: 1.35; }
+.mic { width: 190px; height: 190px; border-radius: 50%; border: 4px solid #222; margin: 14px auto 6px; display: flex;
+       flex-direction: column; align-items: center; justify-content: center; background: #ececec; font-weight: 800; font-size: 22px; }
+.wave { height: 46px; margin: 10px 0; background: repeating-linear-gradient(90deg,#333 0 3px,transparent 3px 9px);
+        mask: linear-gradient(#000,#000); clip-path: polygon(0 40%,5% 10%,10% 60%,15% 20%,20% 70%,25% 30%,30% 80%,35% 15%,40% 65%,45% 25%,50% 90%,55% 20%,60% 70%,65% 35%,70% 85%,75% 25%,80% 60%,85% 15%,90% 55%,95% 30%,100% 50%,100% 100%,0 100%); }
+.bubble { border: 2px solid #8a8a8a; border-radius: 14px 14px 14px 4px; padding: 9px 11px; font-size: 15px; background: #f5f5f5; margin: 6px 0; }
+.bubble.me { border-radius: 14px 14px 4px 14px; margin-left: 40px; background: #fff; }
+.sheet { position: absolute; left: 0; right: 0; bottom: 0; border-top: 3px solid #222; border-radius: 22px 22px 0 0;
+         padding: 14px 16px 16px; background: #fff; box-shadow: 0 -8px 0 rgba(0,0,0,.08); }
+.dim { position: absolute; inset: 0; background: rgba(0,0,0,.28); }
+.tag { display: inline-block; border: 1.5px solid #333; border-radius: 8px; padding: 1px 7px; font-size: 12px; font-weight: 700; }
+ul.r { padding-left: 20px; margin: 6px 0; font-size: 17px; line-height: 1.45; }
+.mk { position: absolute; width: 30px; height: 30px; border-radius: 50%; background: #111; color: #fff; font-weight: 800;
+      display: flex; align-items: center; justify-content: center; font-size: 15px; border: 2px solid #fff; z-index: 9; }
+.small { font-size: 13px; color: #555; }
+
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:28px 36px;padding:26px 30px}
+    .cell{display:flex;flex-direction:column;align-items:center}
+    .cap{font-family:'Times New Roman',serif;font-size:21px;font-weight:700;margin-bottom:10px;text-align:center}
+    .notes{width:360px;margin-top:10px}
+    .nt{font-size:15px;line-height:1.35;margin:4px 0;display:flex;gap:8px}
+    .nn{flex:none;width:22px;height:22px;border-radius:50%;background:#111;color:#fff;font-weight:800;font-size:13px;display:flex;align-items:center;justify-content:center}
+    .ttl{font-family:'Times New Roman',serif;font-size:26px;font-weight:700;text-align:center;padding-top:22px}
+    </style></head><body id='s'><div class='ttl'>Lampiran A1 - Alur lansia: pemasangan, beranda, peringatan, Tanya Dulu</div><div class='grid'><div class='cell'><div class='cap'>Gambar A1. Pemasangan oleh anak (3 langkah)</div><div class='phone'>
+<div class="notch"></div><div class="sb"><span>09.41</span><span>JagaOrtu</span></div>
+<h1>Pasang JagaOrtu untuk Ibu</h1>
+<div class="row" style="gap:6px;margin-bottom:6px"><span class="tag">1 Izin</span><span class="tag">2 Pendamping</span><span class="tag">3 Kata sandi</span></div>
+<div class="card"><h2>1. Izin baca notifikasi</h2>
+<div class="row" style="justify-content:space-between"><span style="font-size:15px">WhatsApp &amp; SMS dari nomor tak dikenal</span><div class="tog"></div></div>
+<div class="small">Hanya untuk mendeteksi pesan berisiko. Isi pesan tidak disimpan.</div></div>
+<div class="card"><h2>2. Pilih Pendamping</h2>
+<div class="row"><div class="av">R</div><div style="font-size:16px"><b>Rina</b> (anak) - utama</div></div>
+<div class="row" style="margin-top:6px"><div class="av">A</div><div style="font-size:16px"><b>Andi</b> (anak) - cadangan</div></div>
+<div class="small" style="margin-top:6px">+ Tambah pendamping</div></div>
+<div class="card"><h2>3. Kata sandi keluarga</h2>
+<div style="font-size:16px">Kata sandi: <b>"nasi liwet"</b></div>
+<div style="font-size:16px;margin-top:4px">Bahasa suara: <b>Sunda</b> &#9662;</div></div>
+<div class="btn pri">Selesai - Ibu terlindungi</div>
+<div class="mk" style="top:150px;left:318px">1</div><div class="mk" style="top:268px;left:318px">2</div><div class="mk" style="top:430px;left:318px">3</div>
+</div><div class='notes'><div class='nt'><span class='nn'>1</span>Izin eksplisit dan terbatas: hanya notifikasi berisiko, isi tidak disimpan.</div><div class='nt'><span class='nn'>2</span>Pendamping cadangan dipanggil bila pendamping utama tidak menjawab.</div><div class='nt'><span class='nn'>3</span>Kata sandi keluarga untuk memverifikasi telepon 'darurat' (anti kloning suara).</div></div></div><div class='cell'><div class='cap'>Gambar A2. Beranda lansia</div><div class='phone'>
+<div class="notch"></div><div class="sb"><span>07.30</span><span>JagaOrtu</span></div>
+<h1>Selamat pagi,<br>Bu Rukmini</h1>
+<div class="card soft"><div class="row"><div class="av" style="width:46px;height:46px">&#10003;</div>
+<div><div style="font-size:20px;font-weight:800">Ibu terlindungi</div><div style="font-size:15px">Rina siap membantu</div></div></div></div>
+<div class="mic">&#127908;<div>TANYA DULU</div></div>
+<div style="text-align:center;font-size:16px;color:#444;margin-bottom:6px">Tekan lalu ceritakan,<br>atau bagikan pesan ke sini</div>
+<div class="btn">&#128222; Telepon Rina</div>
+<div class="btn">&#128222; Telepon Andi</div>
+<div class="card soft" style="font-size:15px">Latihan hari ini: 1 pesan &#8250;</div>
+<div class="mk" style="top:270px;left:292px">1</div><div class="mk" style="top:150px;left:300px">2</div><div class="mk" style="top:520px;left:300px">3</div>
+</div><div class='notes'><div class='nt'><span class='nn'>1</span>Satu tombol utama yang besar: 'Tanya Dulu' (bicara atau bagikan pesan).</div><div class='nt'><span class='nn'>2</span>Teks besar, kontras tinggi, maksimal dua aksi utama per layar.</div><div class='nt'><span class='nn'>3</span>Pendamping dapat dihubungi dalam satu ketukan.</div></div></div><div class='cell'><div class='cap'>Gambar A3. Peringatan otomatis atas pesan WhatsApp</div><div class='phone'>
+<div class="notch"></div><div class="sb"><span>13.05</span><span>WhatsApp</span></div>
+<div class="row"><div class="av">?</div><div><b>+62 813-xxxx-2190</b><div class="small">nomor baru</div></div></div>
+<div class="bubble">Ma, ini Andi. HP-ku rusak, ini nomor baru. Tolong transfer 5 juta ke rek BRI 1234-xxxx, cepat ya. Jangan bilang Papa dulu.</div>
+<div class="dim"></div>
+<div class="sheet">
+<div class="row" style="justify-content:space-between"><h1 style="margin:0">Tunggu dulu, Bu.</h1><span class="tag">&#128266; Sunda</span></div>
+<div style="font-size:16px;margin:6px 0 2px">Pesan ini punya 3 tanda penipuan:</div>
+<ul class="r"><li>Nomor baru mengaku anak</li><li>Minta transfer cepat</li><li>Minta dirahasiakan</li></ul>
+<div class="btn pri">Tanya Rina dulu</div>
+<div class="btn">Telepon Andi (nomor lama)</div>
+<div class="link">Saya yakin ini aman</div>
+</div>
+<div class="mk" style="top:452px;left:232px">1</div><div class="mk" style="top:548px;left:318px">2</div><div class="mk" style="top:622px;left:326px">3</div>
+</div><div class='notes'><div class='nt'><span class='nn'>1</span>Muncul otomatis dan dibacakan dengan suara, dalam bahasa pilihan lansia.</div><div class='nt'><span class='nn'>2</span>Alasan konkret (tanda-tanda), bukan vonis 'pasti penipuan'.</div><div class='nt'><span class='nn'>3</span>Aksi utama adalah orang kedua; lansia tetap memegang keputusan.</div></div></div><div class='cell'><div class='cap'>Gambar A4. Tanya Dulu dengan suara</div><div class='phone'>
+<div class="notch"></div><div class="sb"><span>16.12</span><span>JagaOrtu</span></div>
+<h1>Ceritakan saja, Bu</h1>
+<div class="wave"></div>
+<div class="bubble me">"Tadi ada yang telepon, ngaku polisi. Katanya Andi ditahan, minta uang damai 10 juta."</div>
+<div class="card"><div style="font-size:17px;font-weight:800">Ini pola penipuan "keluarga ditahan polisi".</div>
+<div style="font-size:16px;margin-top:4px">Polisi tidak meminta uang damai lewat telepon.</div>
+<div style="font-size:16px;margin-top:8px"><b>Yang sebaiknya Ibu lakukan:</b></div>
+<ol style="font-size:16px;padding-left:22px;margin:4px 0;line-height:1.45"><li>Tutup teleponnya.</li><li>Telepon Andi di nomor tersimpan.</li><li>Kabari Rina.</li></ol></div>
+<div class="btn pri">&#128222; Telepon Andi</div>
+<div class="btn">Kabari Rina</div>
+<div class="mk" style="top:92px;left:300px">1</div><div class="mk" style="top:236px;left:318px">2</div><div class="mk" style="top:372px;left:318px">3</div>
+</div><div class='notes'><div class='nt'><span class='nn'>1</span>Ucapan lansia diubah menjadi teks (speech-to-text).</div><div class='nt'><span class='nn'>2</span>Penjelasan bahasa sederhana + langkah konkret, tanpa istilah teknis.</div><div class='nt'><span class='nn'>3</span>Jawaban juga dibacakan; tombol langsung ke tindakan aman.</div></div></div></div></body></html>

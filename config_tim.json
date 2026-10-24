@@ -1,0 +1,28 @@
+{
+  "_petunjuk": "Ganti SEMUA teks berbentuk [ISI: ...] dengan data asli (lihat ISI_DATA_TIM.md), lalu jalankan: .venv\\Scripts\\python build_all.py  -- build_all.py menolak membangun berkas final selama masih ada [ISI: ...] kecuali memakai --draft. Hapus anggota 3/4 dari daftar bila tim hanya 2-3 orang.",
+  "nama_tim": "JagaOrtu",
+  "nama_solusi": "JagaOrtu",
+  "judul_proposal": "JagaOrtu: Aturan Dua Orang Berbasis AI untuk Melindungi Lansia dari Penipuan Digital",
+  "subtema": "AI for Inclusive Access (utama) dan AI for Daily Living",
+  "anggota": [
+    {"peran": "Ketua", "nama": "[ISI: Nama lengkap Ketua]", "kampus": "Institut Teknologi Bandung", "prodi": "Teknik Elektro", "angkatan": "[ISI: Angkatan]", "nim": "[ISI: NIM]", "fokus": "Arsitektur, keamanan & privasi, pitching"},
+    {"peran": "Anggota", "nama": "[ISI: Nama lengkap Anggota 2]", "kampus": "[ISI: Kampus]", "prodi": "[ISI: Prodi]", "angkatan": "[ISI: Angkatan]", "nim": "[ISI: NIM]", "fokus": "AI engineer (NLP, suara, OCR)"},
+    {"peran": "Anggota", "nama": "[ISI: Nama lengkap Anggota 3]", "kampus": "[ISI: Kampus]", "prodi": "[ISI: Prodi]", "angkatan": "[ISI: Angkatan]", "nim": "[ISI: NIM]", "fokus": "Mobile & full-stack (Android, backend)"},
+    {"peran": "Anggota", "nama": "[ISI: Nama lengkap Anggota 4]", "kampus": "[ISI: Kampus]", "prodi": "[ISI: Prodi]", "angkatan": "[ISI: Angkatan]", "nim": "[ISI: NIM]", "fokus": "UX research & bisnis"}
+  ],
+  "kota_ttd": "Bandung",
+  "tanggal_ttd": "[ISI: tanggal] Desember 2026",
+  "validasi": {
+    "_petunjuk": "Biarkan null jika survei/wawancara belum dilakukan: proposal otomatis memakai teks 'rencana validasi'. Isi otomatis dari CSV: .venv\\Scripts\\python 06_Riset_Pengguna\\olah_hasil.py --tulis (lihat 06_Riset_Pengguna\\README_RISET.md). JANGAN mengarang angka.",
+    "survei_n": null,
+    "survei_pct_ortu_pernah_jadi_target": null,
+    "survei_pct_khawatir": null,
+    "survei_pct_mau_jadi_pendamping": null,
+    "survei_pct_bayar_min15rb": null,
+    "wawancara_lansia_n": null,
+    "uji_wireframe_n": null,
+    "wawancara_temuan": null,
+    "uji_wireframe_pct_paham": null,
+    "kutipan_lansia": null
+  }
+}
